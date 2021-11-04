@@ -1,0 +1,40 @@
+{
+  "files": {
+    "static/js/0.b2ab9a6c.chunk.js": "/node-react/static/js/0.b2ab9a6c.chunk.js",
+    "static/js/0.b2ab9a6c.chunk.js.map": "/node-react/static/js/0.b2ab9a6c.chunk.js.map",
+    "main.css": "/node-react/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/node-react/static/js/main.6e87a4b2.chunk.js",
+    "main.js.map": "/node-react/static/js/main.6e87a4b2.chunk.js.map",
+    "runtime-main.js": "/node-react/static/js/runtime-main.06a32664.js",
+    "runtime-main.js.map": "/node-react/static/js/runtime-main.06a32664.js.map",
+    "static/css/3.5bdb3388.chunk.css": "/node-react/static/css/3.5bdb3388.chunk.css",
+    "static/js/3.828acfab.chunk.js": "/node-react/static/js/3.828acfab.chunk.js",
+    "static/js/3.828acfab.chunk.js.map": "/node-react/static/js/3.828acfab.chunk.js.map",
+    "static/js/4.1d1502f0.chunk.js": "/node-react/static/js/4.1d1502f0.chunk.js",
+    "static/js/4.1d1502f0.chunk.js.map": "/node-react/static/js/4.1d1502f0.chunk.js.map",
+    "static/js/5.6f4a3416.chunk.js": "/node-react/static/js/5.6f4a3416.chunk.js",
+    "static/js/5.6f4a3416.chunk.js.map": "/node-react/static/js/5.6f4a3416.chunk.js.map",
+    "static/js/6.567fb724.chunk.js": "/node-react/static/js/6.567fb724.chunk.js",
+    "static/js/6.567fb724.chunk.js.map": "/node-react/static/js/6.567fb724.chunk.js.map",
+    "static/js/7.d5df98c9.chunk.js": "/node-react/static/js/7.d5df98c9.chunk.js",
+    "static/js/7.d5df98c9.chunk.js.map": "/node-react/static/js/7.d5df98c9.chunk.js.map",
+    "static/js/8.2223bff7.chunk.js": "/node-react/static/js/8.2223bff7.chunk.js",
+    "static/js/8.2223bff7.chunk.js.map": "/node-react/static/js/8.2223bff7.chunk.js.map",
+    "index.html": "/node-react/index.html",
+    "static/css/3.5bdb3388.chunk.css.map": "/node-react/static/css/3.5bdb3388.chunk.css.map",
+    "static/css/main.6dea0f05.chunk.css.map": "/node-react/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/0.b2ab9a6c.chunk.js.LICENSE.txt": "/node-react/static/js/0.b2ab9a6c.chunk.js.LICENSE.txt",
+    "static/js/3.828acfab.chunk.js.LICENSE.txt": "/node-react/static/js/3.828acfab.chunk.js.LICENSE.txt",
+    "static/media/300.css": "/node-react/static/media/roboto-vietnamese-300-normal.af9afdc1.woff2",
+    "static/media/400.css": "/node-react/static/media/roboto-vietnamese-400-normal.c0bec65d.woff2",
+    "static/media/500.css": "/node-react/static/media/roboto-vietnamese-500-normal.b8e494da.woff2",
+    "static/media/700.css": "/node-react/static/media/roboto-vietnamese-700-normal.3096f18a.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.06a32664.js",
+    "static/css/3.5bdb3388.chunk.css",
+    "static/js/3.828acfab.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.6e87a4b2.chunk.js"
+  ]
+}
