@@ -14,10 +14,12 @@ router.get('/create', (req, res) => {
         descripcion: 'Descripcion de la noticia',
         autor: 'Autor de la noticia',
         fecha: new Date(),
-        imagen: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.elmundo.es%2Fcultura%2Fnoticias%2F2018%2F11%2F12%2Fnoticia-de-la-fuerza-de-la-futbol-de-la-seleccion-de-espana-se-vuelve-a-la-seleccion-de-espana-en-el-mundo-futbol-2018-11-12-1544290900.html&psig=AOvVaw2X_Z_X_X_X_X_X_X&ust=1544290901086000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKDyq-_6-gCFQAAAAAdAAAAABAD',
+        imagen: 'https://www.google.com',
         categoria: 'Categoria de la noticia',
     });
+    console.log({noticia});
     noticia.save((err, noticiaDB) => {
+        console.log({err});
         if (err) {
             return res.status(400).json({
                 ok: false,

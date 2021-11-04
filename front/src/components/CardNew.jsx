@@ -8,7 +8,7 @@ import { red } from '@mui/material/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import { Box } from '@mui/system';
 
-const CardNew = () => {
+const CardNew = ({noticia}) => {
     return (
         <Card sx={{ maxWidth: 200 }}>
             <CardActionArea>
@@ -18,8 +18,8 @@ const CardNew = () => {
                             R
                         </Avatar>
                     }
-                    title="Shrimp and Chorizo Paella"
-                    subheader="September 14, 2016"
+                    title={noticia.titulo}
+                    subheader={noticia.date}
                 />
                 <CardMedia
                     component="img"
@@ -28,14 +28,11 @@ const CardNew = () => {
                     alt="green iguana"
                 />
                 <CardContent>
-                
-                    <Typography variant="body2"><Box sx={{ height: '35px' }} style={{overflow: 'hidden'}}>
-                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                        species, ranging across all continents except Antarctica
-                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                        species, ranging across all continents except Antarctica
-                    </Box></Typography>
-                    
+                    <Box sx={{ height: '35px' }} style={{overflow: 'hidden'}}>
+                        <Typography variant="body2">
+                            {noticia.descripcion}
+                        </Typography>
+                    </Box>
                 </CardContent>
             </CardActionArea>
             <CardActions>

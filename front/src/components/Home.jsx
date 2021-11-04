@@ -31,12 +31,10 @@ export default function Home() {
 
   const traerDatos = useCallback(
     async () => {
-      if (!user) return
+      //if (!user) return
       
-      console.log(user)
-
       let res = await NoticiasServices(request).get();
-      res = res.data.sort();
+      res = res.data.noticias.sort();
       const datosNoticias = res.map((noticia) => {
         return {...noticia, value: noticia.id, label: noticia.nombre}
       })
@@ -46,6 +44,7 @@ export default function Home() {
   )
 
   useEffect(() => {
+    console.log('dfvd')
     traerDatos();
   }, [traerDatos]);
 
@@ -59,18 +58,12 @@ export default function Home() {
             News {noticias.length}
           </Typography>
           <Grid container spacing={4}>
-            <Grid item xs={12} sm={6} md={4}>
-              <CardNew sx={{ m: 10 }} />
-            </Grid>
-            <Grid item xs={12} sm={6} md={4}>
-              <CardNew sx={{ m: 10 }} />
-            </Grid>
-            <Grid item xs={12} sm={6} md={4}>
-              <CardNew sx={{ m: 10 }} />
-            </Grid>
-            <Grid item xs={12} sm={6} md={4}>
-              <CardNew sx={{ m: 10 }} />
-            </Grid>
+            {noticias.map((noticia) => (
+              <Grid item xs={12} sm={6} md={4} lg={3}>
+                <CardNew noticia={noticia} />
+              </Grid>
+            ))}
+            
           </Grid>
 
         </Paper>

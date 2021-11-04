@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const localServer = "http://localhost/api";
+const localServer = "http://localhost:4000/api";
 const globalServer = "https://audit.micolevirtual.com/audit7-laravel/api";
 // eslint-disable-next-line no-restricted-globals
 const serverUrl =
