@@ -24,8 +24,8 @@ const CardNew = ({noticia}) => {
                 <CardMedia
                     component="img"
                     height="140"
-                    image="https://upload.wikimedia.org/wikipedia/commons/8/82/Snakes_green_reptile.jpg"
-                    alt="green iguana"
+                    image={noticia.imagen}
+                    alt={noticia.imagen}
                 />
                 <CardContent>
                     <Box sx={{ height: '35px' }} style={{overflow: 'hidden'}}>
@@ -39,6 +39,11 @@ const CardNew = ({noticia}) => {
                 <IconButton aria-label="add to favorites">
                     <FavoriteIcon />
                 </IconButton>
+                <Box sx={{ height: '35px' }} style={{overflow: 'hidden'}}>
+                    <Typography variant="body2">
+                        {noticia.likes}
+                    </Typography>
+                </Box>
                 
             </CardActions>
         </Card>
