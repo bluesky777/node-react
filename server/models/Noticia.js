@@ -6,7 +6,7 @@ const NoticiaSchema = new Schema({
     titulo: {
         type: String,
         required: true,
-        default: function() {
+        default: function () {
             const num = Math.floor(Math.random() * 4);
             const descripciones = [
                 'La tecnología de la información (TI)',
@@ -24,7 +24,7 @@ const NoticiaSchema = new Schema({
     descripcion: {
         type: String,
         required: true,
-        default: function() {
+        default: function () {
             const num = Math.floor(Math.random() * 4);
             const descripciones = [
                 'La tecnología de la información (TI) es la aplicación de ordenadores y equipos de telecomunicación para almacenar, recuperar, transmitir y manipular datos, con frecuencia utilizado en el contexto de los negocios u otras empresas. El término se utiliza como sinónimo para los computadores y las redes de computadoras, pero también abarca otras tecnologías de distribución de información, tales como la televisión y los teléfonos. Múltiples industrias están asociadas con las tecnologías de la información: hardware y software de computadoras, electrónica, semiconductores, internet, equipos de telecomunicación, el comercio electrónico y los servicios computacionales.',
@@ -38,8 +38,8 @@ const NoticiaSchema = new Schema({
     imagen: {
         type: String,
         required: true,
-        default: function() {
-            const num = Math.floor(Math.random() * (400 - 20)) + 20;
+        default: function () {
+            const num = Math.floor(Math.random() * (250 - 20)) + 20;
             return `https://picsum.photos/id/${num}/400/300`;
         },
     },
@@ -50,7 +50,7 @@ const NoticiaSchema = new Schema({
     categoria: {
         type: String,
         required: true,
-        default: function() {
+        default: function () {
             const num = Math.floor(Math.random() * (4 - 1)) + 1;
             const categorias = ['Deportes', 'Cultura', 'Economía', 'Tecnología'];
             return categorias[num];
@@ -58,8 +58,8 @@ const NoticiaSchema = new Schema({
     },
     likes: {
         type: Number,
-        default: function() {
-            return Math.floor(Math.random() * (100 - 20)) + 20;    
+        default: function () {
+            return Math.floor(Math.random() * (100 - 20)) + 20;
         },
     },
 });

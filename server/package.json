@@ -16,10 +16,10 @@
     "express": "^4.17.1",
     "mongoose": "^6.0.12",
     "mongoose-paginate-v2": "^1.4.2",
-    "morgan": "^1.10.0",
-    "nodemon": "^2.0.14"
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "eslint": "^8.1.0"
+    "eslint": "^8.1.0",
+    "nodemon": "^2.0.14"
   }
 }
