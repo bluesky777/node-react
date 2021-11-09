@@ -8,7 +8,6 @@ import IconButton from '@mui/material/IconButton';
 import Paper from '@mui/material/Paper';
 import { TextField } from '@mui/material';
 import MenuIcon from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
 import LockIcon from '@material-ui/icons/Lock';
 import request from '../data/api';
 import { useSelector } from 'react-redux';
