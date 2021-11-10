@@ -9,7 +9,7 @@ import noticiasRoutes from './routes/noticiasRoutes.js';
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 app.use(cors());
 app.use(express.json());
@@ -17,8 +17,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(morgan('dev'));
 
 mongoose.connect('mongodb://mongo:27017/docker-node-mongo', {
-        useNewUrlParser: true,
-    }).then(() => console.log('Connected to MongoDB'))
+    useNewUrlParser: true,
+}).then(() => console.log('Connected to MongoDB'))
     .catch(err => console.log(err));
 
 app.get('/', (req, res) => {

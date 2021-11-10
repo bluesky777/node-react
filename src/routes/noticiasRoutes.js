@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import Noticia from '../../models/Noticia.js';
+import Noticia from '../models/Noticia.js';
 const router = Router();
 
 router.get('/', (req, res) => {

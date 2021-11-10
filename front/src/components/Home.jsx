@@ -10,7 +10,7 @@ import { TextField } from '@mui/material';
 import MenuIcon from '@material-ui/icons/Menu';
 import LockIcon from '@material-ui/icons/Lock';
 import request from '../data/api';
-import { useSelector } from 'react-redux';
+//import { useSelector } from 'react-redux';
 import { NoticiasServices } from "../services/NoticiasServices";
 import CardNew from "./CardNew";
 import { Container } from "@material-ui/core";
@@ -24,10 +24,10 @@ export default function Home() {
 
   const navigation = useNavigate();
   const [noticias, setNoticias] = useState([]);
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState('a');
   const [page, setPage] = useState(1);
 
-  const user = useSelector(state => state.AuthReducer.user)
+  //const user = useSelector(state => state.AuthReducer.user)
 
   const clickLogOut = () => {
     navigation('/login');
@@ -44,6 +44,7 @@ export default function Home() {
 
   const traerDatos = useCallback(
     async () => {
+      console.log('sdfvf')
       //if (!user) return
       console.log({ query })
       let res = await NoticiasServices(request).get(query, page, 3);
@@ -51,7 +52,7 @@ export default function Home() {
 
       const _noticias = noticias.concat(res.docs)
 
-      if (_noticias.length == 0 && query.length == 0) {
+      if (_noticias.length === 0 && query.length === 0) {
         await NoticiasServices(request).create();
         alert('Hemos creado noticias')
         window.location.reload(false);
@@ -66,8 +67,8 @@ export default function Home() {
   )
 
   const fetchPage = async () => {
-    const nextPage = page + 1
     setPage(page + 1)
+    traerDatos()
   }
 
   useEffect(() => {
@@ -86,7 +87,7 @@ export default function Home() {
       <CssBaseline />
       <Container fixed>
         <Paper square sx={{ pb: '50px' }}>
-          <TextField style={{ marginTop: '20px' }} onChange={handleChange} placeholder='Enter username' fullWidth required variant="standard" />
+          <TextField style={{ marginTop: '20px', paddingBottom: '20px' }} onChange={handleChange} placeholder='Enter username' fullWidth required variant="standard" />
           <InfiniteScroll
             dataLength={noticias.length} //This is important field to render the next data
             next={fetchPage}
